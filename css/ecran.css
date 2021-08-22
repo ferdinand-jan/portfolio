@@ -1,0 +1,303 @@
+@media screen and (min-width: 769px) {
+
+    main {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    /*--------------------------------HEADER--------------------------------*/
+    .image-header-page {
+        height: 95vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .accueil-contact {
+        height: 95vh;
+    }
+
+    .image-header-page h1 {
+        font-size: 7vw;
+        position: relative;
+        z-index: 997;
+    }
+
+    .image-header-page .bouton-entrer {
+        position: relative;
+        bottom: -310px;
+        font-size: 3vw;
+    }
+    
+    .titre {
+        display: none;
+    }
+    
+    .nav-fixed {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+        opacity: 0;
+        transition: all 0.3s linear;
+        border-bottom: 2px solid #00000085;
+    }
+    
+    .sroll-haut {
+        display: none;
+    }
+
+    /*-------------------------------PRESENTATION-----------------------------*/    
+    .presentation {
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .presentation > div:last-of-type {
+        display: flex;
+        width: 55vw;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .presentation .photo {
+        background: url('../images/photo.jpg') no-repeat center;
+        background-size: 150% 210%;
+        border: 15px solid black;
+        width: 18vw;
+        height: 18vw;
+        border-radius: 50%;
+        margin-right: 50px;
+        transition: opacity 0.2s linear;
+    }
+
+    .presentation .text-justify {
+        width: 60%;
+        margin: 0;
+    }
+
+/*-------------------------------PROJETS-----------------------------*/    
+.projets {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.projets > div:last-of-type {
+    display: flex;
+    /* width: 55vw; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projets .text-justify {
+    width: 60%;
+    margin: 0;
+}
+        
+/*-----------------------------BUTTON TITRE - accueil.html----------------------------*/
+    .bouton-titre {
+        background: none;
+        border: 0;
+        box-sizing: border-box;
+        margin-bottom: 100px;
+        margin-top: 40px;
+        padding: 1em 2em;
+        margin: 40px auto 100px auto;
+        /*Using inset box-shadow instead of border for sizing simplicity*/
+        box-shadow: inset 0 0 0 2px #f45e61;
+        color: #f45e61;
+        font-size: 20px;
+        font-weight: 700;
+
+        /*Required, since we're setting absolute on pseudo-elements*/
+        position: relative;
+        vertical-align: middle;
+    }
+
+    .bouton-titre::before,
+    .bouton-titre::after {
+        box-sizing: inherit;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .draw {
+        transition: color 0.25s;
+    }
+
+    .draw::before,
+    .draw::after {
+        /*Set border to invisible, so we don't see a 4px border on a 0x0 element before the transition starts*/
+        border: 2px solid transparent;
+        width: 0;
+        height: 0;
+    }
+
+    /*This covers the top & right borders (expands right, then down)*/
+    .draw::before {
+        top: 0;
+        left: 0;
+    }
+
+    /*And this the bottom & left borders (expands left, then up)*/
+    .draw::after {
+        bottom: 0;
+        right: 0;
+    }
+
+    .draw:hover {
+        color: #60daaa;
+    }
+
+    /*Hover styles*/
+    .draw:hover::before,
+    .draw:hover::after {
+        width: 100%;
+        height: 100%;
+    }
+
+    .draw:hover::before {
+        border-top-color: #60daaa;
+        /*Make borders visible*/
+        border-right-color: #60daaa;
+        transition:
+            width 0.25s ease-out,
+            /*Width expands first*/
+            height 0.25s ease-out 0.25s;
+        /*And then height*/
+    }
+
+    .draw:hover::after {
+        border-bottom-color: #60daaa;
+        /*Make borders visible*/
+        border-left-color: #60daaa;
+        transition:
+            border-color 0s ease-out 0.5s,
+            /*Wait for ::before to finish before showing border*/
+            width 0.25s ease-out 0.5s,
+            /*And then exanding width*/
+            height 0.25s ease-out 0.75s;
+        /*And finally height*/
+    }
+
+    /*Inherits from .draw*/
+    .meet:hover {
+        color: #232e41;/*#fbca6*/
+    }
+
+    /*Start ::after in same position as ::before*/
+    .meet::after {
+        top: 0;
+        left: 0;
+    }
+
+    /*Change colors*/
+    .meet:hover::before {
+        border-top-color: #232e41;
+        border-right-color: #232e41;
+    }
+
+    .meet:hover::after {
+        border-bottom-color: #232e41;
+        border-left-color: #232e41;
+        transition:
+            /*Animate height first, then width*/
+            height 0.25s ease-out,
+            width 0.25s ease-out 0.25s;
+    }
+    
+    /*--------------------------------PARCOURS - accueil.html----------------------------*/
+    .parcours {
+        background-color: #adceea;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 100px;
+    }
+    
+    .main-timeline8 {
+        position: relative;
+        z-index: 998;
+    }
+
+    /*--------------------------PROJETS--------------------------------*/
+    .realisations {
+        background: #fefefe;
+    }
+
+    .gallery_product img {
+        border-radius: 8px;
+    }
+
+    /*caption images*/
+    .product-list-fade-effect {
+        width:100%;
+        height:auto;
+        position:relative;
+        margin-bottom:20px;	
+        overflow:hidden;
+        border-radius: 8px;
+    }
+
+    .product-list-fade-effect img {
+        transition-duration:0.4s;
+    }
+
+    .product-list-fade-effect .product-overlay {
+        width:90%;
+        height:90%;
+        position:absolute;
+        padding:20px;
+        background:rgba(28, 32, 32, 0.9);
+        color:#fff;
+        top:5%;
+        left:5%;
+        opacity:0;
+        transition-duration:0.4s;
+    }
+
+    .product-list-fade-effect .product-overlay h3 {
+        margin:0 0 12px 0;
+    }
+
+    .product-list-fade-effect:hover .product-overlay {
+        opacity:1;
+    }
+
+    .product-list-fade-effect:hover img {
+        transform: scale(1.1);
+    }
+
+    /*--------------------------CONTACT--------------------------------*/
+    .liste-contact {
+        list-style: none;
+        font-size: 1.5vw;
+    }
+        
+    /*--------------------------------FOOTER------------------------------*/
+    footer > div{
+        width: 55vw;
+        margin: auto;
+    }
+    
+    footer {
+        font-size: 15px;
+        padding-top: 100px;
+    }
+    
+    footer .row {
+        margin-bottom: 40px;
+    }
+    
+    footer .contact p {
+        padding-right: 22px;
+    }
+}

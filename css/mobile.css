@@ -1,0 +1,157 @@
+/*bleu foncé #232e41
+beu #3b5e82
+bleu clair #3c7aaf
+beige #eeedea
+jaune #e58b31*/
+
+@media screen and (max-width: 768px) {
+    html, body {
+        padding: 0;
+        margin: 0;
+        width: 101%;
+        height: 101%;
+        overflow-x: hidden;
+    }
+    
+    .titre {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    
+    .nav-fixed {
+        display: none;
+    }
+    
+    .sroll-haut {
+        background-color: black;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 999;
+        color: #E6E6E6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+        opacity: 0.75;
+    }
+    
+    .sroll-haut .icon-logo_fj::before {
+        position: relative;
+        right: -3px;
+    }
+    
+    /*------------------------------HEADER-------------------------------*/
+    .image-header-page {
+        height: 44vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .accueil-contact {
+        height: 44vh;
+    }
+
+    h1 {
+        font-size: 7vw;
+        position: relative;
+        top: -30px;
+    }
+
+    .image-header-page .bouton-entrer {
+        position: relative;
+        bottom: -120px;
+        font-size: 6vw;
+    }
+
+    /*--------------------------PRÉSENTATION - accueil.html-----------------------------*/
+    .draw {
+        display: none;
+    }
+    
+    .presentation {
+        background-color: #E6E6E6;
+    }
+
+    .presentation h2 {
+        padding: 15px;
+        font-size: 2vw;
+        text-transform: uppercase;
+        border: 2px solid #232e41;
+    }
+
+    .presentation .photo {
+        background: url('../images/photo.jpg') no-repeat center;
+        background-size: 100% 140%;
+        width: 30vw;
+        height: 30vw;
+        border-radius: 50%;
+        margin: auto;
+    }
+
+    .presentation p {
+        font-size: 2.5vw;
+        margin: 0;
+        letter-spacing: -0.1vw;
+        width: 75vw;
+    }
+
+    .scale-in-center {
+        -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+    /*-----------------------------PARCOURS - accueil.html-------------------------------*/
+    .parcours {
+        background-color: #adceea;
+        padding: 40px 0px;
+    }
+
+    .parcours h2 {
+        padding: 15px;
+        font-size: 2vw;
+        text-transform: uppercase;
+        border: 2px solid #E6E6E6;
+    }
+    
+    .main-timeline8:before {
+        height: 89%!important;
+    }
+    
+    .main-timeline8 .description {
+        font-size: 11px;
+    }
+
+    /*--------------------------PROJETS--------------------------------*/
+    .projet {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .projet .image {
+        height: 300px;
+        background-color: black;
+    }
+
+    .projet .description {
+        padding: 40px;
+    }
+    
+    .carousel-item {
+        height: 300px!important;
+    }
+    .carousel-item img {
+        height: 100%;
+    }
+
+    /*--------------------------------CONTACT--------------------------------------*/
+    .liste-contact {
+        font-size: 5.5vw;
+    }
+}
