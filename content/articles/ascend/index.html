@@ -97,7 +97,7 @@
                             <div class="col-md-6 col-12">
                                 <p>
                                     <ul>
-                                        <li>Projet de 3 mois</li>
+                                        <li>Projet de 4 mois</li>
                                         <li>Projet étudiant pour le M1 de LISAA</li>
                                         <li>Groupe de 5 personnes</li>
                                         <li>Unreal Engine 4</li>
@@ -114,12 +114,12 @@
                         </div>
                     </div>
                     <h3 class="text-center">CCG Toolkit et prototypage</h3>
-                    <p class="text-justify">Avec un délai aussi court (3 mois pour faire tout le jeu), la <span class="gras">phase de pré-production a été extrêmement courte</span>. Une fois le game concept validé (dès la première semaine) et les principaux systèmes du jeu définis (<a href="https://drive.google.com/drive/folders/1chFp3GecErez1vKh0aM9wrb0oQo8z4QB?usp=sharing">lien vers le dossier de game mechanics</a>), je suis passé très rapidement à du <span class="gras">prototypage dans Unreal Engine afin de répondre à nos question et de commencer a déjà itérer</span>. J’ai pu faire du prototypage rapide grâce au <span class="gras">CCG Toolkit</span> (un framework disponible sur le Unreal Marketplace), qui m’a permis d’avoir de bonnes bases, et que j’ai grandement modifié par la suite.</p>
+                    <p class="text-justify">Avec un délai aussi court (4 mois pour faire tout le jeu), la <span class="gras">phase de pré-production a été extrêmement courte</span>. Une fois le game concept validé (dès la première semaine) et les principaux systèmes du jeu définis (<a href="https://drive.google.com/drive/folders/1chFp3GecErez1vKh0aM9wrb0oQo8z4QB?usp=sharing">lien vers le dossier de game mechanics</a>), je suis passé très rapidement à du <span class="gras">prototypage dans Unreal Engine afin de répondre à nos question et de commencer a déjà itérer</span>. J’ai pu faire du prototypage rapide grâce au <span class="gras">CCG Toolkit</span> (un framework disponible sur le Unreal Marketplace), qui m’a permis d’avoir de bonnes bases, et que j’ai grandement modifié par la suite.</p>
                     <figure class="figure mb-5">
                         <img src="../../../images/realisations/prototype.png" class="img-fluid">
                         <figcaption class="figure-caption">Capture d'écran d'une partie pendant la phase de prototypage</figcaption>
                     </figure>
-                    <p class="text-justify">Ce prototype fut un succès, beaucoup de choses étaient a modifier (pas que au niveau visuel mais aussi dans la conception du jeu et les interactions) mais nous avons pu répondre aux <span class="gras">3 principales interrogations que j'avais identifié</span> : le jeu est amusant, l’adaptabilité aux situation de jeu grâce aux cartes se fait bien ressentir et le délai du projet semble être suffisant pour scripter, habiller et équilibrer le jeu pour une trentaine de cartes. Il était cependant nécessaire de <span class="gras">réduire le scope</span> au niveau du nombre de combats prévus (3 à la base avec des ennemis différents, puis un seul combat après le prototypage pour la vertical slice que représente notre jeu).</p>
+                    <p class="text-justify">Ce prototype fut un succès, beaucoup de choses étaient à modifier (pas uniquement au niveau visuel mais aussi dans la conception du jeu et les interactions) mais nous avons pu répondre aux <span class="gras">3 principales interrogations que j'avais identifiées</span> : le jeu est amusant, l’adaptabilité aux situations de jeu grâce aux cartes se fait bien ressentir et le délai du projet semble être suffisant pour scripter, habiller et équilibrer le jeu pour une trentaine de cartes. Il était cependant nécessaire de <span class="gras">réduire le scope</span> au niveau du nombre de combats prévus (3 à la base avec des ennemis différents, puis un seul combat après le prototypage, pour la vertical slice que représente notre jeu).</p>
                     
                     <h3 class="text-center">Mise en place des decks</h3>
                     <p class="text-justify">Le but est de donner un deck spécial au joueur et un autre à l’ennemi, avec des cartes différentes et des mécaniques différentes. Avec le nombre de cartes maximum que nous avons établi lors du prototypage (environ 30), j’ai pu commencé à concevoir les différentes cartes et la taille des decks. Le jeu n’étant pas un jeu multijoueur, il n’est pas nécessaire que les decks (celui de l’AI et celui du joueur) aient les mêmes mécaniques. De ce fait, la <span class="gras">mécanique des éléments sera propre au joueur</span>, et les ennemis n’auront que leurs propres créatures.</p>
@@ -130,7 +130,7 @@
                     </figure>
                     
                     <h3 class="text-center">Équilibrage</h3>
-                    <p class="text-justify">Une de mes plus grandes tâches a été d’équilibrer les cartes du jeu, afin que le joueur ai un <span class="gras">juste challenge à relever lors des combats</span>. Pour faire cela j’ai mis en place une matrice croisant les valeurs des cartes. Cette valeur est bien sûr arbitraire mais me permet de donner une indication concernant l’attaque, la vie et l’effet de cette carte par rapport à son coût (la valeur de la capacité est calculée automatiquement avec le tableau de droite).</p>
+                    <p class="text-justify">Une de mes plus grandes tâches a été d’équilibrer les cartes du jeu, afin que le joueur ait un <span class="gras">juste challenge à relever lors des combats</span>. Pour faire cela j’ai mis en place une matrice croisant les valeurs des cartes. Cette valeur est bien sûr arbitraire mais me permet de donner une indication concernant l’attaque, la vie et l’effet de cette carte par rapport à son coût (la valeur de la capacité est calculée automatiquement avec le tableau de droite).</p>
                     <figure class="figure mb-5">
                         <img src="../../../images/realisations/table_balance.png" class="img-fluid">
                         <figcaption class="figure-caption">Matrice croisée des créatures du deck du joueur</figcaption>
