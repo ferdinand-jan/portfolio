@@ -229,6 +229,11 @@ footer li a, footer li a:hover {
     background-size: 100% 100%;
 }
 
+.ecran-liyok {
+    background: url('../images/realisations/liyok.png') no-repeat center;
+    background-size: 100% 100%;
+}
+
 .darkover {
     position: absolute;
     top: 0;
